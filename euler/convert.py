@@ -7,7 +7,7 @@ from .utils import Float, AxisTriple
 
 
 def convert_xzx_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to XZX."""
     sa, ca = sin(a), cos(a)
@@ -29,7 +29,7 @@ def convert_xzx_xzx(
 
 
 def convert_xzx_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to XYX."""
     sa, ca = sin(a), cos(a)
@@ -51,7 +51,7 @@ def convert_xzx_xyx(
 
 
 def convert_xzx_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to YXY."""
     sa, ca = sin(a), cos(a)
@@ -73,7 +73,7 @@ def convert_xzx_yxy(
 
 
 def convert_xzx_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to YZY."""
     sa, ca = sin(a), cos(a)
@@ -95,7 +95,7 @@ def convert_xzx_yzy(
 
 
 def convert_xzx_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -120,7 +120,7 @@ def convert_xzx_zyz(
 
 
 def convert_xzx_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -142,7 +142,7 @@ def convert_xzx_zxz(
 
 
 def convert_xzx_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to XZY."""
     sa, ca = sin(a), cos(a)
@@ -164,7 +164,7 @@ def convert_xzx_xzy(
 
 
 def convert_xzx_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -186,7 +186,7 @@ def convert_xzx_xyz(
 
 
 def convert_xzx_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -208,7 +208,7 @@ def convert_xzx_yxz(
 
 
 def convert_xzx_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to YZX."""
     sa, ca = sin(a), cos(a)
@@ -230,7 +230,7 @@ def convert_xzx_yzx(
 
 
 def convert_xzx_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -252,7 +252,7 @@ def convert_xzx_zyx(
 
 
 def convert_xzx_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZX to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -274,7 +274,7 @@ def convert_xzx_zxy(
 
 
 def convert_xyx_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to XZX."""
     sa, ca = sin(a), cos(a)
@@ -296,7 +296,7 @@ def convert_xyx_xzx(
 
 
 def convert_xyx_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to XYX."""
     sa, ca = sin(a), cos(a)
@@ -318,7 +318,7 @@ def convert_xyx_xyx(
 
 
 def convert_xyx_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to YXY."""
     sa, ca = sin(a), cos(a)
@@ -340,7 +340,7 @@ def convert_xyx_yxy(
 
 
 def convert_xyx_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to YZY."""
     sa, ca = sin(a), cos(a)
@@ -362,7 +362,7 @@ def convert_xyx_yzy(
 
 
 def convert_xyx_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -387,7 +387,7 @@ def convert_xyx_zyz(
 
 
 def convert_xyx_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -409,7 +409,7 @@ def convert_xyx_zxz(
 
 
 def convert_xyx_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to XZY."""
     sa, ca = sin(a), cos(a)
@@ -431,7 +431,7 @@ def convert_xyx_xzy(
 
 
 def convert_xyx_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -453,7 +453,7 @@ def convert_xyx_xyz(
 
 
 def convert_xyx_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -475,7 +475,7 @@ def convert_xyx_yxz(
 
 
 def convert_xyx_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to YZX."""
     sa, ca = sin(a), cos(a)
@@ -497,7 +497,7 @@ def convert_xyx_yzx(
 
 
 def convert_xyx_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -519,7 +519,7 @@ def convert_xyx_zyx(
 
 
 def convert_xyx_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYX to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -541,7 +541,7 @@ def convert_xyx_zxy(
 
 
 def convert_yxy_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to XZX."""
     sa, ca = sin(a), cos(a)
@@ -563,7 +563,7 @@ def convert_yxy_xzx(
 
 
 def convert_yxy_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to XYX."""
     sa, ca = sin(a), cos(a)
@@ -585,7 +585,7 @@ def convert_yxy_xyx(
 
 
 def convert_yxy_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to YXY."""
     sa, ca = sin(a), cos(a)
@@ -607,7 +607,7 @@ def convert_yxy_yxy(
 
 
 def convert_yxy_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to YZY."""
     sa, ca = sin(a), cos(a)
@@ -629,7 +629,7 @@ def convert_yxy_yzy(
 
 
 def convert_yxy_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -654,7 +654,7 @@ def convert_yxy_zyz(
 
 
 def convert_yxy_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -676,7 +676,7 @@ def convert_yxy_zxz(
 
 
 def convert_yxy_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to XZY."""
     sa, ca = sin(a), cos(a)
@@ -698,7 +698,7 @@ def convert_yxy_xzy(
 
 
 def convert_yxy_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -720,7 +720,7 @@ def convert_yxy_xyz(
 
 
 def convert_yxy_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -742,7 +742,7 @@ def convert_yxy_yxz(
 
 
 def convert_yxy_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to YZX."""
     sa, ca = sin(a), cos(a)
@@ -764,7 +764,7 @@ def convert_yxy_yzx(
 
 
 def convert_yxy_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -786,7 +786,7 @@ def convert_yxy_zyx(
 
 
 def convert_yxy_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXY to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -808,7 +808,7 @@ def convert_yxy_zxy(
 
 
 def convert_yzy_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to XZX."""
     sa, ca = sin(a), cos(a)
@@ -830,7 +830,7 @@ def convert_yzy_xzx(
 
 
 def convert_yzy_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to XYX."""
     sa, ca = sin(a), cos(a)
@@ -852,7 +852,7 @@ def convert_yzy_xyx(
 
 
 def convert_yzy_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to YXY."""
     sa, ca = sin(a), cos(a)
@@ -874,7 +874,7 @@ def convert_yzy_yxy(
 
 
 def convert_yzy_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to YZY."""
     sa, ca = sin(a), cos(a)
@@ -896,7 +896,7 @@ def convert_yzy_yzy(
 
 
 def convert_yzy_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -921,7 +921,7 @@ def convert_yzy_zyz(
 
 
 def convert_yzy_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -943,7 +943,7 @@ def convert_yzy_zxz(
 
 
 def convert_yzy_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to XZY."""
     sa, ca = sin(a), cos(a)
@@ -965,7 +965,7 @@ def convert_yzy_xzy(
 
 
 def convert_yzy_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -987,7 +987,7 @@ def convert_yzy_xyz(
 
 
 def convert_yzy_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -1009,7 +1009,7 @@ def convert_yzy_yxz(
 
 
 def convert_yzy_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to YZX."""
     sa, ca = sin(a), cos(a)
@@ -1031,7 +1031,7 @@ def convert_yzy_yzx(
 
 
 def convert_yzy_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -1053,7 +1053,7 @@ def convert_yzy_zyx(
 
 
 def convert_yzy_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZY to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -1075,7 +1075,7 @@ def convert_yzy_zxy(
 
 
 def convert_zyz_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to XZX."""
     sa, ca = sin(a), cos(a)
@@ -1097,7 +1097,7 @@ def convert_zyz_xzx(
 
 
 def convert_zyz_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to XYX."""
     sa, ca = sin(a), cos(a)
@@ -1119,7 +1119,7 @@ def convert_zyz_xyx(
 
 
 def convert_zyz_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to YXY."""
     sa, ca = sin(a), cos(a)
@@ -1141,7 +1141,7 @@ def convert_zyz_yxy(
 
 
 def convert_zyz_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to YZY."""
     sa, ca = sin(a), cos(a)
@@ -1163,7 +1163,7 @@ def convert_zyz_yzy(
 
 
 def convert_zyz_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -1185,7 +1185,7 @@ def convert_zyz_zyz(
 
 
 def convert_zyz_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -1207,7 +1207,7 @@ def convert_zyz_zxz(
 
 
 def convert_zyz_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to XZY."""
     sa, ca = sin(a), cos(a)
@@ -1229,7 +1229,7 @@ def convert_zyz_xzy(
 
 
 def convert_zyz_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -1251,7 +1251,7 @@ def convert_zyz_xyz(
 
 
 def convert_zyz_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -1273,7 +1273,7 @@ def convert_zyz_yxz(
 
 
 def convert_zyz_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to YZX."""
     sa, ca = sin(a), cos(a)
@@ -1295,7 +1295,7 @@ def convert_zyz_yzx(
 
 
 def convert_zyz_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -1317,7 +1317,7 @@ def convert_zyz_zyx(
 
 
 def convert_zyz_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYZ to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -1339,7 +1339,7 @@ def convert_zyz_zxy(
 
 
 def convert_zxz_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to XZX."""
     sa, ca = sin(a), cos(a)
@@ -1361,7 +1361,7 @@ def convert_zxz_xzx(
 
 
 def convert_zxz_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to XYX."""
     sa, ca = sin(a), cos(a)
@@ -1383,7 +1383,7 @@ def convert_zxz_xyx(
 
 
 def convert_zxz_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to YXY."""
     sa, ca = sin(a), cos(a)
@@ -1405,7 +1405,7 @@ def convert_zxz_yxy(
 
 
 def convert_zxz_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to YZY."""
     sa, ca = sin(a), cos(a)
@@ -1427,7 +1427,7 @@ def convert_zxz_yzy(
 
 
 def convert_zxz_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -1449,7 +1449,7 @@ def convert_zxz_zyz(
 
 
 def convert_zxz_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -1471,7 +1471,7 @@ def convert_zxz_zxz(
 
 
 def convert_zxz_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to XZY."""
     sa, ca = sin(a), cos(a)
@@ -1493,7 +1493,7 @@ def convert_zxz_xzy(
 
 
 def convert_zxz_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -1515,7 +1515,7 @@ def convert_zxz_xyz(
 
 
 def convert_zxz_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -1537,7 +1537,7 @@ def convert_zxz_yxz(
 
 
 def convert_zxz_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to YZX."""
     sa, ca = sin(a), cos(a)
@@ -1559,7 +1559,7 @@ def convert_zxz_yzx(
 
 
 def convert_zxz_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -1581,7 +1581,7 @@ def convert_zxz_zyx(
 
 
 def convert_zxz_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXZ to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -1603,7 +1603,7 @@ def convert_zxz_zxy(
 
 
 def convert_xzy_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to XZX."""
     sa, ca = sin(a), cos(a)
@@ -1625,7 +1625,7 @@ def convert_xzy_xzx(
 
 
 def convert_xzy_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to XYX."""
     sa, ca = sin(a), cos(a)
@@ -1647,7 +1647,7 @@ def convert_xzy_xyx(
 
 
 def convert_xzy_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to YXY."""
     sa, ca = sin(a), cos(a)
@@ -1669,7 +1669,7 @@ def convert_xzy_yxy(
 
 
 def convert_xzy_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to YZY."""
     sa, ca = sin(a), cos(a)
@@ -1691,7 +1691,7 @@ def convert_xzy_yzy(
 
 
 def convert_xzy_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -1716,7 +1716,7 @@ def convert_xzy_zyz(
 
 
 def convert_xzy_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -1738,7 +1738,7 @@ def convert_xzy_zxz(
 
 
 def convert_xzy_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to XZY."""
     sa, ca = sin(a), cos(a)
@@ -1760,7 +1760,7 @@ def convert_xzy_xzy(
 
 
 def convert_xzy_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -1782,7 +1782,7 @@ def convert_xzy_xyz(
 
 
 def convert_xzy_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -1804,7 +1804,7 @@ def convert_xzy_yxz(
 
 
 def convert_xzy_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to YZX."""
     sa, ca = sin(a), cos(a)
@@ -1826,7 +1826,7 @@ def convert_xzy_yzx(
 
 
 def convert_xzy_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -1848,7 +1848,7 @@ def convert_xzy_zyx(
 
 
 def convert_xzy_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XZY to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -1870,7 +1870,7 @@ def convert_xzy_zxy(
 
 
 def convert_xyz_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to XZX."""
     sa, ca = sin(a), cos(a)
@@ -1892,7 +1892,7 @@ def convert_xyz_xzx(
 
 
 def convert_xyz_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to XYX."""
     sa, ca = sin(a), cos(a)
@@ -1914,7 +1914,7 @@ def convert_xyz_xyx(
 
 
 def convert_xyz_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to YXY."""
     sa, ca = sin(a), cos(a)
@@ -1936,7 +1936,7 @@ def convert_xyz_yxy(
 
 
 def convert_xyz_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to YZY."""
     sa, ca = sin(a), cos(a)
@@ -1958,7 +1958,7 @@ def convert_xyz_yzy(
 
 
 def convert_xyz_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -1980,7 +1980,7 @@ def convert_xyz_zyz(
 
 
 def convert_xyz_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -2002,7 +2002,7 @@ def convert_xyz_zxz(
 
 
 def convert_xyz_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to XZY."""
     sa, ca = sin(a), cos(a)
@@ -2024,7 +2024,7 @@ def convert_xyz_xzy(
 
 
 def convert_xyz_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -2046,7 +2046,7 @@ def convert_xyz_xyz(
 
 
 def convert_xyz_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -2068,7 +2068,7 @@ def convert_xyz_yxz(
 
 
 def convert_xyz_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to YZX."""
     sa, ca = sin(a), cos(a)
@@ -2090,7 +2090,7 @@ def convert_xyz_yzx(
 
 
 def convert_xyz_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -2112,7 +2112,7 @@ def convert_xyz_zyx(
 
 
 def convert_xyz_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from XYZ to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -2134,7 +2134,7 @@ def convert_xyz_zxy(
 
 
 def convert_yxz_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to XZX."""
     sa, ca = sin(a), cos(a)
@@ -2156,7 +2156,7 @@ def convert_yxz_xzx(
 
 
 def convert_yxz_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to XYX."""
     sa, ca = sin(a), cos(a)
@@ -2178,7 +2178,7 @@ def convert_yxz_xyx(
 
 
 def convert_yxz_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to YXY."""
     sa, ca = sin(a), cos(a)
@@ -2200,7 +2200,7 @@ def convert_yxz_yxy(
 
 
 def convert_yxz_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to YZY."""
     sa, ca = sin(a), cos(a)
@@ -2222,7 +2222,7 @@ def convert_yxz_yzy(
 
 
 def convert_yxz_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -2244,7 +2244,7 @@ def convert_yxz_zyz(
 
 
 def convert_yxz_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -2266,7 +2266,7 @@ def convert_yxz_zxz(
 
 
 def convert_yxz_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to XZY."""
     sa, ca = sin(a), cos(a)
@@ -2288,7 +2288,7 @@ def convert_yxz_xzy(
 
 
 def convert_yxz_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -2310,7 +2310,7 @@ def convert_yxz_xyz(
 
 
 def convert_yxz_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -2332,7 +2332,7 @@ def convert_yxz_yxz(
 
 
 def convert_yxz_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to YZX."""
     sa, ca = sin(a), cos(a)
@@ -2354,7 +2354,7 @@ def convert_yxz_yzx(
 
 
 def convert_yxz_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -2376,7 +2376,7 @@ def convert_yxz_zyx(
 
 
 def convert_yxz_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YXZ to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -2398,7 +2398,7 @@ def convert_yxz_zxy(
 
 
 def convert_yzx_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to XZX."""
     sa, ca = sin(a), cos(a)
@@ -2420,7 +2420,7 @@ def convert_yzx_xzx(
 
 
 def convert_yzx_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to XYX."""
     sa, ca = sin(a), cos(a)
@@ -2442,7 +2442,7 @@ def convert_yzx_xyx(
 
 
 def convert_yzx_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to YXY."""
     sa, ca = sin(a), cos(a)
@@ -2464,7 +2464,7 @@ def convert_yzx_yxy(
 
 
 def convert_yzx_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to YZY."""
     sa, ca = sin(a), cos(a)
@@ -2486,7 +2486,7 @@ def convert_yzx_yzy(
 
 
 def convert_yzx_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -2511,7 +2511,7 @@ def convert_yzx_zyz(
 
 
 def convert_yzx_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -2533,7 +2533,7 @@ def convert_yzx_zxz(
 
 
 def convert_yzx_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to XZY."""
     sa, ca = sin(a), cos(a)
@@ -2555,7 +2555,7 @@ def convert_yzx_xzy(
 
 
 def convert_yzx_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -2577,7 +2577,7 @@ def convert_yzx_xyz(
 
 
 def convert_yzx_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -2599,7 +2599,7 @@ def convert_yzx_yxz(
 
 
 def convert_yzx_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to YZX."""
     sa, ca = sin(a), cos(a)
@@ -2621,7 +2621,7 @@ def convert_yzx_yzx(
 
 
 def convert_yzx_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -2643,7 +2643,7 @@ def convert_yzx_zyx(
 
 
 def convert_yzx_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from YZX to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -2665,7 +2665,7 @@ def convert_yzx_zxy(
 
 
 def convert_zyx_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to XZX."""
     sa, ca = sin(a), cos(a)
@@ -2687,7 +2687,7 @@ def convert_zyx_xzx(
 
 
 def convert_zyx_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to XYX."""
     sa, ca = sin(a), cos(a)
@@ -2709,7 +2709,7 @@ def convert_zyx_xyx(
 
 
 def convert_zyx_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to YXY."""
     sa, ca = sin(a), cos(a)
@@ -2731,7 +2731,7 @@ def convert_zyx_yxy(
 
 
 def convert_zyx_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to YZY."""
     sa, ca = sin(a), cos(a)
@@ -2753,7 +2753,7 @@ def convert_zyx_yzy(
 
 
 def convert_zyx_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -2775,7 +2775,7 @@ def convert_zyx_zyz(
 
 
 def convert_zyx_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -2797,7 +2797,7 @@ def convert_zyx_zxz(
 
 
 def convert_zyx_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to XZY."""
     sa, ca = sin(a), cos(a)
@@ -2819,7 +2819,7 @@ def convert_zyx_xzy(
 
 
 def convert_zyx_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -2841,7 +2841,7 @@ def convert_zyx_xyz(
 
 
 def convert_zyx_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -2863,7 +2863,7 @@ def convert_zyx_yxz(
 
 
 def convert_zyx_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to YZX."""
     sa, ca = sin(a), cos(a)
@@ -2885,7 +2885,7 @@ def convert_zyx_yzx(
 
 
 def convert_zyx_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -2907,7 +2907,7 @@ def convert_zyx_zyx(
 
 
 def convert_zyx_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZYX to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -2929,7 +2929,7 @@ def convert_zyx_zxy(
 
 
 def convert_zxy_xzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to XZX."""
     sa, ca = sin(a), cos(a)
@@ -2951,7 +2951,7 @@ def convert_zxy_xzx(
 
 
 def convert_zxy_xyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to XYX."""
     sa, ca = sin(a), cos(a)
@@ -2973,7 +2973,7 @@ def convert_zxy_xyx(
 
 
 def convert_zxy_yxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to YXY."""
     sa, ca = sin(a), cos(a)
@@ -2995,7 +2995,7 @@ def convert_zxy_yxy(
 
 
 def convert_zxy_yzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to YZY."""
     sa, ca = sin(a), cos(a)
@@ -3017,7 +3017,7 @@ def convert_zxy_yzy(
 
 
 def convert_zxy_zyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to ZYZ."""
     sa, ca = sin(a), cos(a)
@@ -3039,7 +3039,7 @@ def convert_zxy_zyz(
 
 
 def convert_zxy_zxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to ZXZ."""
     sa, ca = sin(a), cos(a)
@@ -3061,7 +3061,7 @@ def convert_zxy_zxz(
 
 
 def convert_zxy_xzy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to XZY."""
     sa, ca = sin(a), cos(a)
@@ -3083,7 +3083,7 @@ def convert_zxy_xzy(
 
 
 def convert_zxy_xyz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to XYZ."""
     sa, ca = sin(a), cos(a)
@@ -3105,7 +3105,7 @@ def convert_zxy_xyz(
 
 
 def convert_zxy_yxz(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to YXZ."""
     sa, ca = sin(a), cos(a)
@@ -3127,7 +3127,7 @@ def convert_zxy_yxz(
 
 
 def convert_zxy_yzx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to YZX."""
     sa, ca = sin(a), cos(a)
@@ -3149,7 +3149,7 @@ def convert_zxy_yzx(
 
 
 def convert_zxy_zyx(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to ZYX."""
     sa, ca = sin(a), cos(a)
@@ -3171,7 +3171,7 @@ def convert_zxy_zyx(
 
 
 def convert_zxy_zxy(
-    a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles from ZXY to ZXY."""
     sa, ca = sin(a), cos(a)
@@ -3193,7 +3193,7 @@ def convert_zxy_zxy(
 
 
 def convert(
-    p: AxisTriple, q: AxisTriple, a: Float, b: Float, c: Float, *, tol: Float = 1e-8
+    p: AxisTriple, q: AxisTriple, a: Float, b: Float, c: Float, tol: Float = 1e-8
 ) -> tuple[float, float, float]:
     """Convert Euler angles between given basis triples."""
     return globals()[f"convert_{p}_{q}"](a, b, c, tol=tol)  # type: ignore
