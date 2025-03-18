@@ -1,6 +1,6 @@
 """A library for Euler angle computation and conversion."""
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 from .utils import AxisTriple, AXIS_TRIPLES
 from .matrix import *  # noqa
