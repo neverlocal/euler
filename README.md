@@ -2,8 +2,8 @@
 
 [![Generic badge](https://img.shields.io/badge/python-3.10+-green.svg)](https://docs.python.org/3.10/)
 [![Checked with Mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](https://github.com/python/mypy)
-[![PyPI version shields.io](https://img.shields.io/pypi/v/neverlocal-euler.svg)](https://pypi.python.org/pypi/neverlocal-euler/)
-[![PyPI status](https://img.shields.io/pypi/status/neverlocal-euler.svg)](https://pypi.python.org/pypi/neverlocal-euler/)
+[![PyPI version shields.io](https://img.shields.io/pypi/v/euler.svg)](https://pypi.python.org/pypi/euler/)
+[![PyPI status](https://img.shields.io/pypi/status/euler.svg)](https://pypi.python.org/pypi/euler/)
 
 A library for Euler angle computation and conversion.
 
@@ -12,7 +12,7 @@ A library for Euler angle computation and conversion.
 You can install the library from PyPI as follows:
 
 ```
-pip install -U neverlocal-euler
+pip install -U euler
 ```
 
 ## Usage
