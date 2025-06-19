@@ -58,3 +58,34 @@ def su2_to_so3(mat: SU2Matrix, tol: Float = 1e-8) -> RotMatrix:
         [-r2*sin_2theta-s2*sin_2phi, r2*cos_2theta+s2*cos_2phi, 2*rs_sin_sub],
         [2*rs_cos_add, 2*rs_sin_add, r2-s2],
     ]).real.astype(np.float64)
+
+def so3_to_su2(mat: RotMatrix, tol: Float = 1e-8) -> SU2Matrix:
+    """
+    Converts an SO3 rotation to the corresponding SU2 rotation.
+    """
+    r2_sub_s2 = mat[2,2]
+    r2 = (1+r2_sub_s2)/2
+    s2 = (1-r2_sub_s2)/2
+    if r2 < tol:
+        r = 0.0
+        s = np.sqrt(s2)
+        theta = 0.0
+        phi = np.atan2(-mat[0, 1]/s2, mat[1, 1]/s2)/2
+    elif s2 < tol:
+        r = np.sqrt(r2)
+        s = 0.0
+        phi = 0.0
+        theta = np.atan2(mat[0, 1]/r2, mat[0, 0]/r2)/2
+    else:
+        r = np.sqrt(r2)
+        s = np.sqrt(s2)
+        theta_add_phi =  np.atan2(mat[2, 1], mat[2, 0])
+        theta_sub_phi =  np.atan2(mat[1, 2], -mat[0, 2])
+        theta = (theta_add_phi+theta_sub_phi)/2
+        phi = (theta_add_phi-theta_sub_phi)/2
+    if not np.isclose(2*r*s*np.cos(theta+phi), mat[2, 0], atol=tol):
+        s = -s
+    return np.array([
+        [r*np.exp(1j*theta), s*np.exp(-1j*phi)],
+        [-s*np.exp(1j*phi), r*np.exp(-1j*theta)]
+    ], dtype=np.complex128)

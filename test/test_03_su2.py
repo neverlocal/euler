@@ -1,9 +1,23 @@
 from itertools import product
+from typing import Any
 import pytest
 import numpy as np
 from euler.utils import Float, RotMatrix, AxisTriple, AXIS_TRIPLES
 from euler.matrix import matrix
-from euler.su2 import su2_to_so3, SU2Matrix
+from euler.su2 import so3_to_su2, su2_to_so3, SU2Matrix
+
+def normalise_phase(
+    array: np.ndarray[tuple[int, ...], np.dtype[np.complexfloating[Any]]],
+    *,
+    tol: float = 1e-8,
+) -> None:
+    """Normalises the phase of a complex array (in place)."""
+    assert tol > 0
+    idx = np.argmax(abs(array) >= tol)
+    val = array.flatten()[idx]
+    if (aval := abs(val)) >= tol:
+        array *= aval / val
+
 
 def rot_x(a: Float) -> RotMatrix:
     sa, ca = np.sin(a), np.cos(a)
@@ -72,3 +86,13 @@ def test_su2_to_so3(p: AxisTriple) -> None:
         so3_mat = matrix(p, a, b, c)
         converted = su2_to_so3(su2_mat)
         assert np.allclose(so3_mat, converted)
+
+@pytest.mark.parametrize("p", AXIS_TRIPLES)
+def test_so3_to_su2(p: AxisTriple) -> None:
+    for a, b, c in product(np.linspace(0, 2*np.pi, NUM_ANGLES), repeat=3):
+        su2_mat = SU2_ROT[p[0]](a) @ SU2_ROT[p[1]](b) @ SU2_ROT[p[2]](c)
+        so3_mat = matrix(p, a, b, c)
+        converted = so3_to_su2(so3_mat)
+        normalise_phase(su2_mat)
+        normalise_phase(converted)
+        assert np.allclose(su2_mat, converted)
