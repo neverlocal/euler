@@ -3,22 +3,16 @@ Conversion between SU2 rotations (single-qubit unitaries) and the coresponding
 SO3 rotations (actions of those unitaries on the Bloch sphere).
 """
 from typing import Any, TypeAlias
-from euler import angles_xzx
 import numpy as np
 from .utils import Float, RotMatrix
 
-# tuple[int, ...] used for all shapes to fix regression in Numpy 2.2.6 typing.
-# Seems to be fine in Numpy 2.3, but that's currently not supported by Numba.
-
 SU2Matrix: TypeAlias = np.ndarray[
-    tuple[int, ...], np.dtype[np.complexfloating[Any]]
+    tuple[int, int], np.dtype[np.complexfloating[Any]]
 ]
 """Type alias for 2-by-2 SU2 matrices."""
 
 def su2_to_so3(mat: SU2Matrix, tol: Float = 1e-8) -> RotMatrix:
-    """
-    Converts an SU2 rotation to the corresponding SO3 rotation.
-    """
+    """Converts an SU2 rotation to the corresponding SO3 rotation."""
     r, s  = abs(mat[0,0]), abs(mat[0,1])
     r2, s2 = r*r, s*s
     if r2 < tol:
@@ -60,9 +54,7 @@ def su2_to_so3(mat: SU2Matrix, tol: Float = 1e-8) -> RotMatrix:
     ]).real.astype(np.float64)
 
 def so3_to_su2(mat: RotMatrix, tol: Float = 1e-8) -> SU2Matrix:
-    """
-    Converts an SO3 rotation to the corresponding SU2 rotation.
-    """
+    """Converts an SO3 rotation to the corresponding SU2 rotation."""
     r2_sub_s2 = mat[2,2]
     r2 = (1+r2_sub_s2)/2
     s2 = (1-r2_sub_s2)/2

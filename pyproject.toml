@@ -1,6 +1,6 @@
 [project]
 name = "euler"
-version = "1.0.2.post0"
+version = "1.0.3"
 authors = [{ name = "NeverLocal" }]
 description = "A library for Euler angle computation and conversion."
 readme = { file = "README.md", content-type = "text/markdown" }
